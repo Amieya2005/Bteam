@@ -53,24 +53,23 @@ for x in range(0, 13, 2):
         print("I only print the last time")
         list_files = subprocess.run(
                 ["powershell", "-command", "mv", "./file_folder/file_" + str(x) + ".txt", "./"])
-        x = 3
+        # x = 3
         print("for loop", x)
     print(x)
 
 print("Module Finished")
 
 
-
 # sorting code
 
 # 4 3 2 7 1
 
-list = [4, 3, 2, 7, 1 ]
+list = [4, 3, 2, 7, 1]
 
 x1 = 4
 x2 = 3
 x3 = 2
-x4=  7
+x4 = 7
 x5 = 1
 
-sortedlist = sort (x1, x2, x3 ,x4, x5)
+sortedlist = sort(x1, x2, x3, x4, x5)
