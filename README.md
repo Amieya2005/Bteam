@@ -15,8 +15,7 @@ Ctrl-Shift-V = to paste a code in python
 pwd = print working directory
 cd ../ to go back a file - moves back a level
 ls = list the files in the file_folder
-
-
-
-
 $Env:Path
+
+when running a program you have to launch.
+Python is an interpretive language = is the interpreter
