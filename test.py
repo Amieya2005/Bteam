@@ -33,6 +33,7 @@ list_of_numbers = {'20': [[49, 39, 10, 30],
 # using items() method
 print("accessing  lists of data and keys in a few ways")
 print("accessing a dictionary with a number as the key")
+# CHALLANGE .items() is a method for dictonaries. look up and try to use a different method.
 for key, values in num_as_key.items():
     #CHALLANGE make a condition to set 1 of the Dictonaries to a new variable
     for i in values:
