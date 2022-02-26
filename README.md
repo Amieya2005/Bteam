@@ -33,7 +33,7 @@ len() can be used to show how many items are in the Dictionaries
 
 SPACES ARE DIFFERENT FROM TABS, CHOOSE ONE OF THEM AND STICK WITH IT!!
 
-How to calculate distances between waypoints
+****How to calculate distances between waypoints****
 open powershell, an you should be prompted by
 PS C:\Users\user>
 first, you need to run python by typing the command "py.exe"
