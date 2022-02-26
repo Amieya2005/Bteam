@@ -10,7 +10,6 @@ for Brockton student computer this is the command to run python
 
 C:\Python31\python.exe -m pip install numpy
 
-<<<<<<< HEAD
 Ctrl-Z = to end the process in the terminal
 Ctrl-Shift-V = to paste a code in python
 **********Ctrl-S = Save *************
@@ -32,8 +31,8 @@ string = key
  Dictionaries are used to store values in keys
 len() can be used to show how many items are in the Dictionaries
 
-SPACES ARE DIFFERENT FROM TABS, CHOOSE ONE OF THEM AND STICK WITH IT!! 
-=======
+SPACES ARE DIFFERENT FROM TABS, CHOOSE ONE OF THEM AND STICK WITH IT!!
+
 How to calculate distances between waypoints
 open powershell, an you should be prompted by
 PS C:\Users\user>
@@ -82,4 +81,3 @@ when you press enter it should display 6.0
 (this means 6 is your second distance)
 Lesson:complete!
 2/19/22-Interactive Python
->>>>>>> b8830a7e2ee5dc7285174f61060fd737d67851c6
