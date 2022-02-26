@@ -48,7 +48,7 @@ for x in range(0, 13, 2):
     # Display the directory to show the change
     list_files = subprocess.run(
         ["powershell", "-command", "ls", "./file_folder"])
-    #conditional example
+    # conditional example
     if(x == 2):
         print("I only print the last time")
         list_files = subprocess.run(
