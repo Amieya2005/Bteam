@@ -55,6 +55,10 @@ for x in range(0, 13, 2):
                 ["powershell", "-command", "mv", "./file_folder/file_" + str(x) + ".txt", "./"])
         # x = 3
         print("for loop", x)
+    if(x == 4):
+        list_files = subprocess.run(
+               ["powershell", "-command", "New-Item", "./file_folder/flow.txt"])
+
     print(x)
 
 print("Module Finished")
