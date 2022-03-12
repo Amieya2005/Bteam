@@ -32,8 +32,13 @@ string = key
 len() can be used to show how many items are in the Dictionaries
 
 SPACES ARE DIFFERENT FROM TABS, CHOOSE ONE OF THEM AND STICK WITH IT!!
+<<<<<<< HEAD
+-----------------------------------------------------------------------
+How to calculate distances between waypoints
+=======
 
 ****How to calculate distances between waypoints****
+>>>>>>> 4eaa0cd1268d6a8f4af151b53892e24906181149
 open powershell, an you should be prompted by
 PS C:\Users\user>
 first, you need to run python by typing the command "py.exe"
@@ -81,3 +86,4 @@ when you press enter it should display 6.0
 (this means 6 is your second distance)
 Lesson:complete!
 2/19/22-Interactive Python
+---------------------------------------------------------------------

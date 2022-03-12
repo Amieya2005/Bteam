@@ -1,4 +1,4 @@
-# Dictonary examples to learn from
+sdz  # Dictonary examples to learn from
 
 # creates a dictionary
 # with numbers as key
