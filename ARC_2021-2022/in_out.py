@@ -1,12 +1,15 @@
 import os
 import sys
 
-def readWaypointFile(filename):
+def readWaypointFile(algo.py):
 
 	# Returns dictionary of waypoint information
-    waypointFileArray = open(filename).read().split()
+    waypointFileArray = open(algo.py).read().split()
 
     # Waypoint dictionary
+    #find the waypoint to home
+    #make the home the second closest to home#find the waypoint to home
+    #make the home the second closest to home
     waypointDict = {}
     latitude = []
     longitude = []
@@ -32,4 +35,3 @@ def readWaypointFile(filename):
     waypointDict['waypointType'] = waypointType
 
     return waypointDict
-
