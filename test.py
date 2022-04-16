@@ -1,4 +1,4 @@
-sdz  # Dictonary examples to learn from
+# Dictonary examples to learn from
 
 # creates a dictionary
 # with numbers as key
@@ -81,5 +81,5 @@ for key, values in list_of_numbers.items():
     for lists in values:
         print(lists)
         print(lists[0])
-        if(lists[0] < 25):
+        if(lists[0] < 100):
           print("im low")

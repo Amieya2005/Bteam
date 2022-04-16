@@ -24,12 +24,24 @@ b_number = b_number + a_number
 print("b = a + b causes new values to be created in memory and a remains unchanged a =",
       a_number, "b =", b_number)
 
+
+F_list = [7, 8, 9]
+print(F_list)
+
+f_number = 8
+print(f_number)
+
+f_number = b_number
+print(f_number, b_number)
+
+f_number = f_number - a_number
+print("f_number =", f_number, "a_number =", a_number)
+
 # So how about when things mix?
 
 B_list = A_list
 
-print("how about when we set lits to equal eachother? Here A_list = Blist",
-      A_list, "==", B_list)
+print("how about when we set lits to equal eachother? Here A_list = B_list",A_list, "==", B_list)
 
 B_list[1] = B_list[1] + A_list[1]
 
@@ -65,6 +77,13 @@ c = c+1
 print(" Its not obvious if c is independent and a mutable integer or inherited the mutableness of B but notice what happens when i update it c + 1 c=", c, "B_list =", B_list)
 
 
+c = B_list[0]
+print(c)
+B_list[0] += 7
+print(B_list)
+c = B_list[0]
+print(c)
+print(c, B_list[0])
 # how to mess it up in a Loop
 print("printing items to show whats going on in the loop, notce no where is there a counting variable")
 for items in B_list:
@@ -73,6 +92,7 @@ for items in B_list:
   if(items == 2):
     B_list[items] += 2
 
+items == 1
 print("notice after this loop the A_list and B_list remain unchanged",
       A_list, "=?", B_list)
 #CHALLENGE figure out why this loop isnt working as it looks like it should
@@ -93,7 +113,12 @@ print("notice the change to only B_list due to += operator A_list=",
       A_list, "B_list=", B_list)
 
 # CHALLENGE write a loop that makes a smaller new list from a list you write
+B_list = [7,0,8,9,10]
 
+for items in F_list:
+    print(B_list.index(items))
+
+x = 6
 # now for a funciton
 
 
