@@ -1,5 +1,5 @@
 import math
-from algo import *
+from algoD import *
 from in_out import *
 
 

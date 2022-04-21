@@ -1,7 +1,7 @@
 import math
 import numpy as np
-from waypoint_1.txt import*
 waypoint = []
+#order=[1,2,3,4]
 
 
 def determinePath(waypoint):
@@ -90,13 +90,14 @@ def determinePath(waypoint):
     print(Path)
     print("this is the waypoint order")
     return Path
-
+    order = [0, 1, 2, 3, 4]
+    return order
     #closestWaypoint = Distances.index(minimumDistance)
     #Path = Path.append(closestWaypoint)
 
 
 #PLACEHOLDER, just send out current list2
-order = [0, 1, 2, 3, 4]
+
 
 #print(order)
 #for inx1 in range(0, len(order)):
