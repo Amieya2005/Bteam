@@ -1,7 +1,7 @@
 import math
 import numpy as np
+from waypoint_1.txt import*
 waypoint = []
-
 
 
 def determinePath(waypoint):
