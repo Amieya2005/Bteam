@@ -1,10 +1,11 @@
 import os
 import sys
 
-def readWaypointFile(algo.py):
 
-	# Returns dictionary of waypoint information
-    waypointFileArray = open(algo.py).read().split()
+def readWaypointFile(filename):
+
+    # Returns dictionary of waypoint information
+    waypointFileArray = open(filename).read().split()
 
     # Waypoint dictionary
     #find the waypoint to home
