@@ -1,30 +1,36 @@
 import math
 import numpy as np
-waypoint = []
-#order=[1,2,3,4]
+
+order=[0,1,2,3,4]
 
 
 def determinePath(waypoint):
-	# COMPLETE HERE
-	#42.27690 N -83.73063 E 10 H
-	#42.33905 N -83.06404 E 10 A
-	#42.63678 N -83.29613 E 10 C
-	#42.29201 N -83.71624 E 10 B
-	#42.29198 N -83.71561 E 10 A'
+    Lat0 = float(waypoint['Latitude'][0])
+    Lon0 = float(waypoint['longitude'][0])
+    Alt0 = float(waypoint['altitude'][0])
+    print(waypoint['Latitude'][0])
+    waypointH = [Lat0, Lon0, Alt0]
 
-    waypointH = np.array((42.27690, -83.73063, 10))
-    waypointA = np.array((42.33905, -83.06404, 10))
-    waypointC = np.array((42.63678, -83.29613, 10))
-    waypointB = np.array((42.29201, -83.71624, 10))
-    waypointA2 = np.array((42.29198, -83.71561, 10))
-    destinations = (["waypointH = np.array((42.27690, -83.73063, 10))", "waypointA = np.array((42.33905, -83.06404, 10))",
-                     "waypointC = np.array((42.63678, -83.29613, 10))", "waypointB = np.array((42.29201, -83.71624, 10))", "waypointA2 = np.array((42.29198, -83.71561, 10))])"])
+    Lat1 = float(waypoint['Latitude'][1])
+    Lon1 = float(waypoint['longitude'][1])
+    Alt1 = float(waypoint['altitude'][1])
+    waypointA = [Lat1, Lon1, Alt1]
 
-    H = "waypointH"
-    A = "waypointA"
-    C = "waypointC"
-    B = "waypointB"
-    A2 = "waypointA2"
+    Lat2 = float(waypoint['Latitude'][2])
+    Lon2 = float(waypoint['longitude'][2])
+    Alt2 = float(waypoint['altitude'][2])
+    waypointC = [Lat2, Lon2, Alt2]
+
+    Lat3 = float(waypoint['Latitude'][3])
+    Lon3 = float(waypoint['longitude'][3])
+    Alt3 = float(waypoint['altitude'][3])
+    waypointB = [Lat3, Lon3, Alt3]
+
+    Lat4 = float(waypoint['Latitude'][4])
+    Lon4 = float(waypoint['longitude'][4])
+    Alt4 = float(waypoint['altitude'][4])
+    waypointA2 = [Lat4, Lon4, Alt4]
+
 #-----------------------------------------------------------------------------
     #FIRST POINT
     distanceHtoA = np.linalg.norm(waypointH-waypointA)
@@ -39,9 +45,7 @@ def determinePath(waypoint):
     print("distanceHtoB: ", distanceHtoB)
     print("distanceHtoA2: ", distanceHtoA2)
     print("HtoB", UminimumDistance)
-
-    W1 = B
-
+    #W1 = B
     #U=latin for 1
     #Arranged = np.array([[distanceHtoA, distanceHtoC,distanceHtoB, distanceHtoA2]])
     #print(np.sort(Arranged))
@@ -53,14 +57,11 @@ def determinePath(waypoint):
     Distances2 = [distanceBtoA, distanceBtoC, distanceBtoA2]
     SminimumDistance = min(Distances2)
     P2 = SminimumDistance
-
     print("distanceBtoA: ", distanceBtoA)
     print("distanceBtoC: ", distanceBtoC)
     print("distanceBtoA2: ", distanceBtoA2)
-
     print("distanceBtoA2", SminimumDistance)
-
-    W2 = A2
+    #W2 = A2
     #------------------------------------------------------------------------
     #THIRD POINT
     distanceA2toA = np.linalg.norm(waypointA2-waypointA)
@@ -73,7 +74,7 @@ def determinePath(waypoint):
 
     print("distanceA2toC", TminimumDistance)
 
-    W3 = C
+#    W3 = C
     #------------------------------------------------------------------------
     #FOURTH waypoint
     distanceCtoA = np.linalg.norm(waypointC-waypointA)
@@ -81,15 +82,14 @@ def determinePath(waypoint):
     FminimumDistance = Distances4
     P4 = FminimumDistance
     print("distanceCtoA: ", distanceCtoA)
-
     print("distanceCtoA", FminimumDistance)
 
-    W4 = A
+#    W4 = A
     #-------------------------------------------------------------------------
-    Path = ([W1, W2, W3, W4])
-    print(Path)
+    #Path = ([W1, W2, W3, W4])
+    #print(Path)
     print("this is the waypoint order")
-    return Path
+    #return Path
     order = [0, 1, 2, 3, 4]
     return order
     #closestWaypoint = Distances.index(minimumDistance)
