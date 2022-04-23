@@ -1,5 +1,5 @@
 import math
-from algoD import *
+from algoL import *
 from in_out import *
 
 
@@ -10,6 +10,7 @@ def main(filename):
 
     # Determine path
     path = determinePath(waypoints)
+    print(path)
 
     # Export path
     for i in path:  # Print out order of Lat Long

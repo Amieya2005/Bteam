@@ -4,13 +4,9 @@ import sys
 
 def readWaypointFile(filename):
 
-    # Returns dictionary of waypoint information
     waypointFileArray = open(filename).read().split()
 
-    # Waypoint dictionary
-    #find the waypoint to home
-    #make the home the second closest to home#find the waypoint to home
-    #make the home the second closest to home
+
     waypointDict = {}
     latitude = []
     longitude = []
@@ -19,7 +15,6 @@ def readWaypointFile(filename):
     altitude = []
     waypointType = []
 
-    # Waypoint iteration
     for i in range(int(len(waypointFileArray)/6.0)):
         latitude.append(waypointFileArray[(i)*6])
         longitude.append(waypointFileArray[(i)*6+2])
