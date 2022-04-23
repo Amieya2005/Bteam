@@ -72,13 +72,13 @@ def determinePath(waypoint):
         order.append(waypointA2_POS)
     print(order)
     #
-    LatNH = float(waypoint['latitude'][minimumIndex])
-    print("Latitude of New Home", LatNH)
-    LonNH = float(waypoint['longitude'][minimumIndex])
-    print("longitude of New Home", LatNH)
-    AltNH = float(waypoint['altitude'][minimumIndex])
-    print("Altitude of New Home", LatNH)
-    waypointNH = [LatNH, LonNH, AltNH]
+    Lat_NH = float(waypoint['latitude'][minimumIndex])
+    print("Latitude of New Home", Lat_NH)
+    Lon_NH = float(waypoint['longitude'][minimumIndex])
+    print("longitude of New Home", Lon_NH)
+    Alt_NH = float(waypoint['altitude'][minimumIndex])
+    print("Altitude of New Home", Alt_NH)
+    waypointNH = [Lat_NH, Lon_NH, Alt_NH]
     #P1 = waypointNH
     print("New Home", waypointNH)
 #------------------------------------------------------------------------------
@@ -108,10 +108,13 @@ def determinePath(waypoint):
         order.append(waypointA2_POS)
     print(order)
 
-    LatNH2 = float(waypoint['latitude'][minimumIndex2])
-    LonNH2 = float(waypoint['longitude'][minimumIndex2])
-    AltNH2 = float(waypoint['altitude'][minimumIndex2])
-    waypointNH2 = [LatNH2, LonNH2, AltNH2]
+    Lat_NH2 = float(waypoint['latitude'][minimumIndex2])
+    print("Latitude of New Home", Lat_NH2)
+    Lon_NH2 = float(waypoint['longitude'][minimumIndex2])
+    print("Longitude of New Home", Lon_NH2)
+    Alt_NH2 = float(waypoint['altitude'][minimumIndex2])
+    print("Latitude of New Home", Lat_NH2)
+    waypointNH2 = [Lat_NH2, Lon_NH2, Alt_NH2]
 
     print("Second New Home", waypointNH2)
     #print("minimunDistances2", minimumDistances2)
@@ -145,10 +148,13 @@ def determinePath(waypoint):
     #else:
     #order.append(2)
 
-    LatNH3 = float(waypoint['latitude'][minimumIndex3])
-    LonNH3 = float(waypoint['longitude'][minimumIndex3])
-    AltNH3 = float(waypoint['altitude'][minimumIndex3])
-    waypointNH3 = [LatNH3, LonNH3, AltNH3]
+    Lat_NH3 = float(waypoint['latitude'][minimumIndex3])
+    print("Latitude of New Home", Lat_NH3)
+    Lon_NH3 = float(waypoint['longitude'][minimumIndex3])
+    print("Longitude of New Home", Lon_NH3)
+    Alt_NH3 = float(waypoint['altitude'][minimumIndex3])
+    print("Altitude of New Home", Alt_NH3)
+    waypointNH3 = [Lat_NH3, Lon_NH3, Alt_NH3]
     #P1 = waypointNH
     print("Third New Home", waypointNH3)
     #print("minimunDistances3", minimumDistances3)
@@ -172,10 +178,13 @@ def determinePath(waypoint):
         order.append(waypointC_POS)
     print(order)
 
-    LatNH4 = float(waypoint['latitude'][minimumIndex4])
-    LonNH4 = float(waypoint['longitude'][minimumIndex4])
-    AltNH4 = float(waypoint['altitude'][minimumIndex4])
-    waypointNH4 = [LatNH4, LonNH4, AltNH4]
+    Lat_NH4 = float(waypoint['latitude'][minimumIndex4])
+    print("Latitude of New Home", Lat_NH4)
+    Lon_NH4 = float(waypoint['longitude'][minimumIndex4])
+    print("Longitude of New Home", Lon_NH4)
+    Alt_NH4 = float(waypoint['altitude'][minimumIndex4])
+    print("Altitude of New Home", Alt_NH4)
+    waypointNH4 = [Lat_NH4, Lon_NH4, Alt_NH4]
     #P1 = waypointNH
     print("Fourth New Home", waypointNH4)
     #P4 = FminimumDistances, "DistanceAtoC"

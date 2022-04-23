@@ -6,7 +6,6 @@ def readWaypointFile(filename):
 
     waypointFileArray = open(filename).read().split()
 
-
     waypointDict = {}
     latitude = []
     longitude = []
