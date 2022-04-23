@@ -58,7 +58,7 @@ def determinePath(waypoint):
     minimumIndex = (Distances.index(minimumDistances1))
     print("The minimum distance is being assigned to-->", minimumIndex)
     print("Distances values", Distances)
-    print("Index value 0 distance=", Distances[0])
+    print("Index value 0 for Distance Values=", Distances[0])
 
     #this tells us what point is the closest and assigns it to 1st place in  order
     print(order)
@@ -97,7 +97,7 @@ def determinePath(waypoint):
     minimumIndex2 = (Distances2.index(minimumDistances2))
     print("The minimum distance is being assigned to-->", minimumIndex2)
     print("Distances values", Distances2)
-    print("Index value 0 distance=", Distances2[0])
+    print("Index value 0 for Distance Values=", Distances2[0])
     #this tells us what point is the closest and assigns it to 1st place in  order
     print(order)
     if (minimumIndex2 == 0):
@@ -125,8 +125,8 @@ def determinePath(waypoint):
 #-----------------------------------------------------------------------
     #THIRD WAYPOINT
     DistanceNH2toA = np.linalg.norm(waypointNH2-waypointA)
-    DistanceNH2toC = np.linalg.norm(waypointNH2-waypointC)
-    Distances3 = [DistanceNH2toA, DistanceNH2toC]
+    DistanceNH2toA2 = np.linalg.norm(waypointNH2-waypointA2)
+    Distances3 = [DistanceNH2toA, DistanceNH2toA2]
     minimumDistances3 = min(Distances3)
 
     print("Minimum distance in the distance Dictionary=",
@@ -134,12 +134,12 @@ def determinePath(waypoint):
     minimumIndex3 = (Distances3.index(minimumDistances3))
     print("The minimum distance is being assigned to-->", minimumIndex3)
     print("Distances values", Distances3)
-    print("Index value 0 distance=", Distances3[0])
+    print("Index value 0 for Distance Values=", Distances3[0])
     print(order)
     if (minimumIndex3 == 0):
         order.append(waypointA_POS)
     elif(minimumIndex3 == 1):
-        order.append(waypointC_POS)
+        order.append(waypointA2_POS)
     print(order)
     #this tells us what point is the closest and assigns it to 1st place in  order
     print(order)
@@ -172,7 +172,7 @@ def determinePath(waypoint):
     minimumIndex4 = (Distances4.index(minimumDistances4))
     print("The minimum distance is being assigned to-->", minimumIndex4)
     print("Distances values", Distances4)
-    print("Index value 0 of distance value=", Distances4[0])
+    print("Index value 0 for Distance Values=", Distances4[0])
     print(order)
     if (minimumIndex4 == 0):
         order.append(waypointC_POS)
